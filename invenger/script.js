@@ -44,3 +44,28 @@ function updateTime() {
 
 updateTime();
 setInterval(updateTime, 1000);
+
+// error for change password when they are not matching
+
+document.getElementById("submit-btn").addEventListener("click", function(event) {
+    event.preventDefault();
+
+    var newPassword = document.getElementById("new-pass-input").value;
+    var confirmPassword = document.getElementById("confirm-pass-input").value;
+
+    if (newPassword !== confirmPassword) {
+        document.getElementById("confirm-pass-line").style.backgroundColor = "red"; // Change background color to red
+
+        // Add error class to change placeholder color to red
+        document.getElementById("confirm-pass-input").classList.add("error");
+
+        // Clear input fields
+        document.getElementById("new-pass-input").value = "";
+        document.getElementById("confirm-pass-input").value = "";
+    } else {
+        document.getElementById("confirm-pass-line").style.backgroundColor = "white"; // Reset background color
+
+        // Remove error class to reset placeholder color
+        document.getElementById("confirm-pass-input").classList.remove("error");
+    }
+});

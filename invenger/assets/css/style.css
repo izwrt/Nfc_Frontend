@@ -196,7 +196,7 @@ h1{
     padding-bottom: 60px;
 }
 
-#change-pass-input{
+#confirm-pass-input,#new-pass-input,#secrete-pass-input{
     margin-left: 3px;
 }
 
@@ -205,12 +205,16 @@ h1{
 }
 
 #confirm-pass-line{
-    /* background-color: var(--error); */
+    background-color: white;
 }
 
-.confirm-pass-error::placeholder {  
-    /* color:var(--error); */
+#confirm-pass-input::placeholder {  
+    
   }
+
+  #confirm-pass-input.error::placeholder {
+    color: rgba(255, 0, 0, 0.822);
+}
 
 
 /*-------------------------------- password-successfully changed---------------------------------------------- */
