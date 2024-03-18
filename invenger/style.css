@@ -475,7 +475,7 @@ h1{
 
 /* --------------------------------popup for edit emp--------------------------------------------  */
 .blur{
-    display: block;
+    display: none;
 }
 
 .update-emp-form{
@@ -483,7 +483,7 @@ h1{
     border-radius: 10px;
     width: 30rem;
     padding:30px;
-    display: none;
+    display:none;
 }
 
 .update-emp-inputs{
