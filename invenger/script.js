@@ -63,9 +63,7 @@ document.getElementById("submit-btn").addEventListener("click", function(event) 
         document.getElementById("new-pass-input").value = "";
         document.getElementById("confirm-pass-input").value = "";
     } else {
-        document.getElementById("confirm-pass-line").style.backgroundColor = "white"; // Reset background color
-
-        // Remove error class to reset placeholder color
-        document.getElementById("confirm-pass-input").classList.remove("error");
+        // Submit the form if passwords match
+        document.getElementById("change-pass-container").submit();
     }
 });
