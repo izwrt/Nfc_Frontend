@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Employee Page</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="jeevitha.css">
+
 </head>
 <body class="manage-emp-body">
 
@@ -54,7 +56,7 @@
         </div>    
     </div>
 
-<!-- update employee container -->
+<!-- add employee container -->
 
     <div class="manage-emp-container">
             <div class="manage-emp-upper">
@@ -98,19 +100,27 @@
                 </div>
                 <div class="update-emp-inputs">
                     <label>Employee Name</label>
-                    <input type="text" placeholder="Enter Employee Id">
+                    <input type="text" placeholder="Enter Employee Name">
                 </div>
                 <div class="update-emp-inputs">
-                    <label>Employee ID</label>
-                    <input type="text" placeholder="Enter Employee Id">
+                    <label>Status</label>
+                   
+                    <select name="status" id="status">
+                        <option value="active">Active</option>
+                        <option value="inactive">Inactive</option>
+                        <!-- Add more options as needed -->
+                    </select>
                 </div>
                 <div class="update-emp-inputs">
-                    <label>Employee ID</label>
-                    <input type="text" placeholder="Enter Employee Id">
+                    <label>Role</label>
+                    <input type="text" placeholder="Enter Role">
                 </div>
                 <div class="update-emp-inputs">
-                    <label>Employee ID</label>
-                    <input type="text" placeholder="Enter Employee Id">
+                    <label>NFC Code</label>
+                    <input type="text" placeholder="Enter NFC Code">
+                    <button class="scan_image" >
+                        <img style="width:30px;" src="scan.png" alt="scan">
+                    </button>
                 </div>
                 <div class="save-cancel-btn">
                     <button>Save</button>
@@ -119,19 +129,3 @@
               
             </form>
         </div> 
-        
-        <!-- <form class="delete-confirm-form">
-            <h1>Do You want Delete this Record</h1>
-        </form> -->
-
-        <script>
-            function showBlur() {
-                let blurElement = document.querySelector('.blur');
-                let showContainer = document.querySelector('.update-emp-form')
-                blurElement.style.display = 'flex';
-                showContainer.style.display = 'block';
-            }
-        </script>
-</body>       
-  
-</html>
