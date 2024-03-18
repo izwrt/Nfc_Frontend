@@ -61,9 +61,9 @@ body{
     margin-right:30px;
     width: 90px;
     height: 35px;
-    background-color:#0075FF;
+    background-color:#1b213649;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     font-size: 15px;
     color: var(--smokywhite);
 }
