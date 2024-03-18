@@ -552,6 +552,38 @@ h1{
     background-color: rgba(243, 121, 121, 0.555);
 }
 
+/* pop up */
+
+#status{
+    display:flex;
+    width: 16rem;
+    background: var(--smokywhite);
+
+    color: black;
+}
+.update-emp-form{
+    background-color: rgba(248, 239, 239, 0.233); 
+    border-radius: 10px;
+    width: 35rem;
+    padding-left:120px;
+
+    display:none;
+}
+.scan_image{
+    border: none;
+    padding-top: 10px;
+    background-color:transparent;
+   
+}
+.save-cancel-btn{
+    height: auto;
+    background-color: transparent !important;
+    display: flex !important;
+    padding-left: 50px !important;
+    padding-right: 120px !important;
+    justify-content: space-evenly !important;
+}
+
 /*-------------------------------add employee ------------------------------------------------ */
 
 .add-emp-upper{

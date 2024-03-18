@@ -62,7 +62,7 @@
             <div class="manage-emp-upper">
                 <div>
                     <input type="text" placeholder="Search Employee"/>
-                    <img class="emp-search-icon" src="assets\images\search.png" alt="search"/>
+                    <img class="emp-search-icon" src="./assets/images/search.png" alt="search"/>
                    
                 </div> 
                 <button>Add Employee</button>
@@ -119,7 +119,7 @@
                     <label>NFC Code</label>
                     <input type="text" placeholder="Enter NFC Code">
                     <button class="scan_image" >
-                        <img style="width:30px;" src="scan.png" alt="scan">
+                        <img style="width:30px;" src="./assets/images/scan.png" alt="scan">
                     </button>
                 </div>
                 <div class="save-cancel-btn">
@@ -129,3 +129,16 @@
               
             </form>
         </div> 
+        
+
+        <script>
+            function showBlur() {
+                let blurElement = document.querySelector('.blur');
+                let showContainer = document.querySelector('.update-emp-form')
+                blurElement.style.display = 'flex';
+                showContainer.style.display = 'block';
+            }
+        </script>
+</body>       
+  
+</html>
