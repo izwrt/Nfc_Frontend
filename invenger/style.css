@@ -16,6 +16,7 @@ body{
         rgba(0, 96, 255, 1) 8.146882057189941%,
         rgba(0, 58, 153, 1) 100%
       );
+      overflow: hidden;
     height:100vh;
     width:auto;
 }
@@ -190,7 +191,7 @@ h1{
 
 
 
-/* ----------------------------------Change password -------------------------------------*/
+/* ---------------------------------------------- Change password -------------------------------------*/
 #change-pass-container{
     padding-top:30px;
     padding-bottom: 60px;
@@ -218,11 +219,17 @@ h1{
 .blur{
     height:100vh;
     width: 100vw;
+    top:0;
+    bottom:0;
+    z-index: 1;
+    left: 0;
+    right: 0;
     backdrop-filter: blur(4px);
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
+  
   }
 
 .blur div{
@@ -247,32 +254,18 @@ h1{
     width: 15%;
 }
 
+/*---------------------------------------- manage.html ------------------------------------------*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-/*---------------------------------------- addEmployee.html ------------------------------------------*/
-.add-emp-body{
+.manage-emp-body{
     display: flex;
     justify-content: left;
     align-items: left;
     flex-direction: row;
     gap:30px;
-    overflow: hidden;
     padding-top: 30px;
     padding-left: 30px;
-    padding-right: 60px;
+    padding-right: 30px;
     padding-bottom: 40px;
-    
     }
 
     .menu-container{
@@ -310,7 +303,7 @@ h1{
         padding: 10px;
     }
 
-    /* .menu-item-container{
+    .menu-item-container{
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -318,8 +311,7 @@ h1{
         align-items: center;
         gap:10px;
         padding-top: 30px;
-        background-color: red;
-    } */
+    }
 
     ul{
         list-style-type: none;
@@ -338,15 +330,18 @@ h1{
     }
    
 
-   ul li a{
+   ul li #home{
+    background: rgba(4, 10, 41, 0.32);
+    }
+
+    ul li a{
     display: flex;
     flex-direction: row;
-    background: rgba(4, 10, 41, 0.32);
     border-radius: 10px;
     justify-content: c;
     /* width: 5vw; */
     gap:10px;
-    padding:7.5px;
+    padding:10px;
     padding-left: 20px;
     padding-right:80px;
     color: var(--smokywhite);
@@ -354,7 +349,6 @@ h1{
     font-weight: 500;
     /* line-style-type:none; */
     text-decoration: none;
-
     }
 
     ul li a img{
@@ -365,46 +359,6 @@ h1{
     #img-print{
         width: 20%;
     } 
-
-    .manage-emp-upper{
-        display: flex;
-        flex-direction: row;
-        justify-content: right;
-        gap:20px;
-    }
-
-    .manage-emp-upper div{
-        background: #001643;
-        border-radius: 7px;
-        border: solid 0.5px rgba(255, 255, 255, 0.459);
-        width: 20%;
-    }
-
-    .manage-emp-upper input{
-        border-radius: 7px;
-        border: none;
-        color: white;
-        padding-left: 10px;
-        background: #001643;
-    }
-
-
-
-    .manage-emp-upper input:focus{
-        outline: none;
-    }
-
-    .manage-emp-upper input::placeholder{
-        color: rgba(255, 255, 255, 0.651);
-    }
-
-    .manage-emp-upper button{
-        color: rgba(255, 255, 255, 0.80);
-        font-weight: 500;
-        background-color: rgba(255, 255, 255, 0.445);
-        border:none;
-        border-radius: 7px;
-    }
 
     .manage-emp-container{
         width: 100%;
@@ -423,11 +377,182 @@ h1{
         color: rgba(255, 255, 255, 0.822);
     }
 
+    .manage-emp-upper{
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        width: 100%;
+        gap:20px;
+    }
+    
+
+    .emp-search-icon{
+        width:15px;
+        height: 15px;
+        padding:6px;
+    }
+
+    .manage-emp-upper div{
+        background: #001643;
+        border-radius: 7px;
+        border: solid 0.5px rgba(255, 255, 255, 0.459);
+        width: 20%;
+        display : flex;
+        flex-direction: row;
+        /* background-color: red; */
+        padding-right:10px;
+    }
+
+    .manage-emp-upper input{
+        border-radius: 7px;
+        border: none;
+        color: white;
+        padding-left: 10px;
+        padding-top:4px;
+        padding-bottom: 4px;
+        background: #001643;
+    }
+
+    .manage-emp-upper input:focus{
+        outline: none;
+    }
+
+    .manage-emp-upper input::placeholder{
+        color: rgba(255, 255, 255, 0.651);
+    }
+
+    .manage-emp-upper button{
+        color: rgba(255, 255, 255, 0.80);
+        font-weight: 500;
+        background-color: rgba(255, 255, 255, 0.445);
+        border:none;
+        border-radius: 7px;
+    }
 
 
     .emp-details{
         width:100%;
-        height: 75vh;
+        height: 81vh;
+        overflow: auto; 
+        scrollbar-width: thin;
+        scroll-behavior: smooth;
+        scrollbar-color: #0075FF rgba(0, 128, 0, 0);
         border-radius: 22px;
+        display:flex;
+        justify-content: center;
         background-color: rgba(5, 25, 73, 0.54);
     }
+   
+
+    .emp-details table{
+        border-collapse: collapse;
+        height: fit-content;
+        width: 95%;
+    }
+
+    .emp-details table th ,td{
+        font-size: 1vw;
+        text-align: left;
+    }
+
+    #active-column{
+        color: rgb(3, 252, 3);
+    }
+      .emp-details td,th{
+        border-bottom: 1px solid rgba(241, 236, 236, 0.788);
+        padding-top:20px;
+        padding-left:10px
+      }
+
+      .emp-details td{
+       
+        color: rgba(255, 255, 255, 0.781);
+      }
+
+      .emp-details img{
+        width:15px;
+      }
+
+/* --------------------------------popup for edit emp--------------------------------------------  */
+.blur{
+    display: block;
+}
+
+.update-emp-form{
+    background-color: rgba(248, 239, 239, 0.233); 
+    border-radius: 10px;
+    width: 30rem;
+    padding:30px;
+    display: none;
+}
+
+.update-emp-inputs{
+    background-color: transparent !important;
+    display: flex !important;
+    justify-content: left !important;
+    flex:1 !important;
+    padding-bottom: 20px !important;
+}
+
+.update-emp-inputs label{
+    width: 150px !important;
+    color: var(--smokywhite);
+    font-size: 15px;
+    font-weight: 600;
+    
+}
+
+.update-emp-inputs input{
+    background-color: transparent !important;
+    border: 1px solid var(--smokywhite);
+    width: 15rem;
+    font-weight: 600;
+    border-radius: 5px;
+    color: var(--smokywhite);
+    font-size: 15px;
+    padding: 5px;
+}
+
+.update-emp-inputs input:focus{
+    outline:none;
+}
+
+.update-emp-inputs input::placeholder{
+   color: rgba(255, 255, 255, 0.486) !important;
+   font-weight: 500;
+   font-size: 15px;
+}
+
+.save-cancel-btn{
+    height: auto;
+    background-color: transparent !important;
+    display: flex !important;
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+    justify-content: space-evenly !important;
+}
+
+.save-cancel-btn button{
+    padding: 5px;
+    width: 80px;
+    font-weight: 600;
+    border-radius: 5px;
+    font-size: 15px;
+    color: var(--smokywhite);
+    font-weight: 600;
+    border: none;
+    color: var(--smokywhite);
+}
+
+.save-cancel-btn button:nth-child(1){
+    background-color:rgba(125, 125, 238, 0.568);
+}
+
+.save-cancel-btn button:nth-child(2){
+    background-color: rgba(243, 121, 121, 0.555);
+}
+
+
+     
+
+     
