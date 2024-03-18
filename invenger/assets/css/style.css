@@ -380,6 +380,7 @@ h1{
         display: flex;
         flex-direction: row;
         justify-content: right;
+        padding-bottom:20px;
         width: 100%;
         gap:20px;
     }
@@ -432,7 +433,7 @@ h1{
 
     .emp-details{
         width:100%;
-        height: 81vh;
+        height: 56vh;
         overflow: auto; 
         scrollbar-width: thin;
         scroll-behavior: smooth;
@@ -682,4 +683,54 @@ h1{
     margin-right: 10px;
 }
      
+/* -----------------------------------------admin-index------------------------------------------------- */
+
+.hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: left;
+    gap: 4rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color:rgba(5, 25, 73, 0.54);
+    border-radius: 15px;
+    padding:30px;
+    padding-left:5px;
+    padding-right: 5px;
+}
+
+.hero-left{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    background-color: transparent;
+}
+
+.emp-count{
+    border-radius: 7px;
+    padding-right:60px;
+    background: linear-gradient(103deg, #001844 76.7%, #0046C3 145.73%);
+    
+}
+
+.emp-active{
+    border-radius: 7px;
+    padding-right:60px;
+    background: linear-gradient(103deg, #001844 76.7%, #0046C3 145.73%);
+  
+}
+
+.emp-count{
+    border-radius: 7px;
+    background: linear-gradient(103deg, #001844 76.7%, #0046C3 145.73%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding-left: 30px;
+   
+
+}
+
 
