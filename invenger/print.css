@@ -1,0 +1,12 @@
+
+#start-end-date{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 20px;
+}
+
+#print-container{
+    padding-bottom: 70px;
+}
+ 
