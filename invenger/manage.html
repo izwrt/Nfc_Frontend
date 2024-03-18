@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Employee Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="manage-emp-body">
+
+<!-- Menu container -->
+    <div class="menu-container">
+        <!-- invenger log and underline -->
+            <div class="invenger-logo-container">
+                <img src="logo.png" alt="logo"/> 
+                
+                <div class="invenger-logo-underline"></div>
+            </div> 
+
+            
+        <div class="menu-items-container">
+            <ul>
+                <li>
+                    <a id="home" href="#">
+                        <img src="home.png" id="img-print" alt="home"/>
+                        <p>Home</p>
+                    </a>
+                </li>
+                <li>
+                    <a id="profile" href="#">
+                        <img src="profile.png" id="img-print" alt="profile"/>
+                        <p>Profile</p>
+                    </a>
+                </li>
+                <li>
+                    <a id="usrmngmnt" href="#">
+                        <img src="user_management.png"  id="img-print" alt="user_management"/>
+                        <p>Manage</p>
+                    </a>
+                </li>
+                <li>
+                    <a id="print" href="#">
+                        <img src="print.png" id="img-print" alt="print"/>
+                        <p>Print</p>
+                    </a>
+                </li>
+                <li>
+                    <a id="login" href="#">
+                        <img src="log-in 1.png" id="img-print" alt="log-in 1"/>
+                        <p>Login</p>
+                    </a>
+                </li>
+            </ul>          
+        </div>    
+    </div>
+
+<!-- add employee container -->
+
+    <div class="manage-emp-container">
+            <div class="manage-emp-upper">
+                <div>
+                    <input type="text" placeholder="Search Employee"/>
+                    <img class="emp-search-icon" src="search.png" alt="search"/>
+                   
+                </div> 
+                <button>Add Employee</button>
+                
+            </div>
+             <p>Employee Details</p>
+            <div class="emp-details">
+                <table>
+                    <tr>
+                        <th>Employee Id</th>
+                        <th id="table-space">Employee Name</th>
+                        <th id="table-space">Status</th>
+                        <th id="table-space">Role</th>
+                        <th id="table-space"></th>
+                        <th></th>
+                    </tr>
+                    <tr id="table-data">
+                        <td>1175</td>
+                        <td id="table-space">venugopal Iyer</td>
+                        <td id="active-column">Active</td>
+                        <td id="table-space">Software engineer</td>
+                        <td id="table-space"><img src="edit.png" alt="edit" onclick="showBlur()"/></td>
+                        <td id=""><img src="delete.png" alt="delete"/></td>
+        
+                    </tr>  
+                   
+                </table>
+            </div>
+        </div>
+        <div class="blur">
+            <form class="update-emp-form">
+                <div class="update-emp-inputs">
+                    <label>Employee ID</label>
+                    <input type="text" placeholder="Enter Employee Id">
+                </div>
+                <div class="update-emp-inputs">
+                    <label>Employee Name</label>
+                    <input type="text" placeholder="Enter Employee Id">
+                </div>
+                <div class="update-emp-inputs">
+                    <label>Employee ID</label>
+                    <input type="text" placeholder="Enter Employee Id">
+                </div>
+                <div class="update-emp-inputs">
+                    <label>Employee ID</label>
+                    <input type="text" placeholder="Enter Employee Id">
+                </div>
+                <div class="update-emp-inputs">
+                    <label>Employee ID</label>
+                    <input type="text" placeholder="Enter Employee Id">
+                </div>
+                <div class="save-cancel-btn">
+                    <button>Save</button>
+                    <button>Cancel</button>
+                </div>
+              
+            </form>
+        </div> 
+        
+        <!-- <form class="delete-confirm-form">
+            <h1>Do You want Delete this Record</h1>
+        </form> -->
+
+        <script>
+            function showBlur() {
+                let blurElement = document.querySelector('.blur');
+                let showContainer = document.querySelector('.update-emp-form')
+                blurElement.style.display = 'flex';
+                showContainer.style.display = 'block';
+            }
+        </script>
+</body>       
+  
+</html>
