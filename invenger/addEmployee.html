@@ -4,46 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Employee Page</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body class="add-emp-body">
+<body class="manage-emp-body">
 
 <!-- Menu container -->
     <div class="menu-container">
         <!-- invenger log and underline -->
             <div class="invenger-logo-container">
-                <img src="logo.png" alt="logo"/> 
+                <img src="assets\images\logo.png" alt="logo"/> 
+                
                 <div class="invenger-logo-underline"></div>
             </div> 
+
+            
         <div class="menu-items-container">
             <ul>
                 <li>
-                    <a href="#">
-                        <img src="home.png" id="img-print" alt="home"/>
+                    <a id="home" href="#">
+                        <img src="assets\images\home.png" id="img-print" alt="home"/>
                         <p>Home</p>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <img src="profile.png" id="img-print" alt="profile"/>
+                    <a id="profile" href="#">
+                        <img src="assets\images\profile.png" id="img-print" alt="profile"/>
                         <p>Profile</p>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <img src="user_management.png"  alt="user_management"/>
+                    <a id="usrmngmnt" href="#">
+                        <img src="assets\images\user_management.png"  id="img-print" alt="user_management"/>
                         <p>Manage</p>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <img src="print.png" id="img-print" alt="print"/>
+                    <a id="print" href="#">
+                        <img src="assets\images\print.png" id="img-print" alt="print"/>
                         <p>Print</p>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <img src="log-in 1.png" id="img-print" alt="log-in 1"/>
+                    <a id="login" href="#">
+                        <img src="assets\images\log-in 1.png" id="img-print" alt="log-in 1"/>
                         <p>Login</p>
                     </a>
                 </li>
@@ -53,21 +56,35 @@
 
 <!-- add employee container -->
 
-    <div class="manage-emp-container">
-        <div class="manage-emp-upper">
-            <div>
-                <input type="text" placeholder="Search Employee"/>
-            </div>
-           <button>Add Employee</button>
-
-        </div>
-        <p>Employee Details</p>
-        <div class="emp-details">
- 
-        </div>
+<div class="manage-emp-container">
+    <div class="add-emp-upper">
+        <p>Add Employee</p>
     </div>
-        
-</body>
-
-           
+        <form class="emp-details-form" method="post">
+            <div class="emp-details-credentials">
+                <div class="emp-details-credentials-left">
+                    <p>Employee ID</p>
+                    <p>Employee Name</p>
+                    <p>Role</p>
+                    <p>NFC Code</p>
+                </div>
+                <div class="emp-details-credentials-right">
+                <input type="text"/>
+                <input type="text"/>
+                    <input type="text"/>
+                        <div class="nfc-scanner-container">
+                            <input type="text" class="nfc-scanner"/>
+                            <button class="nfc-scan-button">
+                                <img src="assets\images\barcode-scanner.png" alt="scan"/>
+                            </button>
+                        </div>
+                </div>
+            </div>
+            <div class="add-emp-btn-container">
+                <button class="btn-save">Cancel</button>
+                <button class="btn-save">Save</button>
+            </div>
+        </form>
+  
+</body>        
 </html>

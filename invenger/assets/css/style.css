@@ -552,6 +552,108 @@ h1{
     background-color: rgba(243, 121, 121, 0.555);
 }
 
+/*-------------------------------add employee ------------------------------------------------ */
+
+.add-emp-upper{
+    padding-top:3%;
+    justify-content: left;
+    gap:20px;
+}
+
+.emp-details-form{
+    width:100%;
+    height: 81vh;
+    border-radius: 22px;
+    background-color: rgba(5, 25, 73, 0.54);
+}
+
+.emp-details-credentials{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:80px;
+    padding-top: 12%;
+    padding-bottom: 8%;
+}
+
+.emp-details-credentials-left{
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.emp-details-credentials-right{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.emp-details-credentials-right input{
+    border-radius: 5px;
+    border-width: 0.2px;
+    /* height:25px; */
+    border: 0.5px solid #ffffffa4;
+    background: rgba(5, 40, 94, 0.82);
+    padding-left: 10px;
+    width:300px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: var(--smokywhite);
+    font-size: medium;
+}
+
+.emp-details-credentials-right input:focus{
+    outline: none;
+}
+
+.add-emp-btn-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+.btn-save{
+    margin-right:30px;
+    width: 90px;
+    height: 35px;
+    background-color:#0075FF;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    color: var(--smokywhite);
+}
+
+.nfc-scanner-container {
+    display: flex;
+    align-items: center;
+}
+
+.nfc-scanner {
+    flex: 1;
+}
+
+.nfc-scan-button {
+    margin-left: 10px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.nfc-scan-button img {
+    width: 38px;
+    margin-right: 10px;
+}
+     
+
+     
+
+
 
      
 
