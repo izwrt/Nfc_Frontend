@@ -210,9 +210,9 @@ h1{
 
 #confirm-pass-input::placeholder {  
     
-  }
+  } 
 
-  #confirm-pass-input.error::placeholder {
+#confirm-pass-input.error::placeholder {
     color: rgba(255, 0, 0, 0.822);
 }
 

@@ -46,6 +46,22 @@ updateTime();
 setInterval(updateTime, 1000);
 
 // error for change password when they are not matching
+document.getElementById("confirm-pass-input").addEventListener("input", function() {
+    var newPassword = document.getElementById("new-pass-input").value;
+    var confirmPassword = this.value;
+
+    var confirmPassLine = document.getElementById("confirm-pass-line");
+    var confirmPassInput = document.getElementById("confirm-pass-input");
+
+    if (newPassword !== confirmPassword) {
+        confirmPassLine.style.backgroundColor = "red"; // Change background color to red
+        confirmPassInput.classList.add("error"); // Add error class to change placeholder color to red
+    } else {
+        confirmPassLine.style.backgroundColor = ""; // Reset background color
+        confirmPassInput.classList.remove("error"); // Remove error class
+    }
+});
+
 
 document.getElementById("submit-btn").addEventListener("click", function(event) {
     event.preventDefault();
