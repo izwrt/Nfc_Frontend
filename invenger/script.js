@@ -85,4 +85,11 @@ document.getElementById("submit-btn").addEventListener("click", function(event) 
 });
 
 
-// changes
+
+document.getElementById("add-emp-btn").addEventListener("click", function() {
+    window.location.href = "addEmployee.html";
+});
+
+
+//done
+

@@ -743,3 +743,6 @@ h1{
     width: 9rem;
 }
 
+.btn-back{
+    cursor: pointer;
+}
