@@ -12,12 +12,10 @@
     <div class="menu-container">
         <!-- invenger log and underline -->
             <div class="invenger-logo-container">
-                <img src="assets\images\logo.png" alt="logo"/> 
-                
+                <img src="assets\images\logo.png" alt="logo"/>
                 <div class="invenger-logo-underline"></div>
-            </div> 
+            </div>
 
-            
         <div class="menu-items-container">
             <ul>
                 <li>
@@ -50,8 +48,8 @@
                         <p>Logout</p>
                     </a>
                 </li>
-            </ul>          
-        </div>    
+            </ul>
+        </div>
     </div>
 
 <!-- add employee container -->
@@ -61,12 +59,10 @@
                 <div>
                     <input type="text" placeholder="Search Employee"/>
                     <img class="emp-search-icon" src="./assets/images/search.png" alt="search"/>
-                   
-                </div> 
+                </div>
                 <button id="add-emp-btn">Add Employee</button>
-                
             </div>
-             <p>Employee Details</p>
+<p>Employee Details</p>
             <div class="emp-details">
                 <table>
                     <tr>
@@ -84,61 +80,11 @@
                         <td id="table-space">Software engineer</td>
                         <td id="table-space"><img src="assets/images/edit.png" alt="edit" id="showButton"/></td>
                         <td id=""><img src="assets/images/delete.png" alt="delete"/></td>
-        
-                    </tr>  
-                   
+                    </tr>
                 </table>
             </div>
         </div>
-        <div class="blur">
-            <form class="update-emp-form">
-                <div class="update-emp-inputs">
-                    <label>Employee ID</label>
-                    <input type="text" placeholder="Enter Employee Id">
-                </div>
-                <div class="update-emp-inputs">
-                    <label>Employee Name</label>
-                    <input type="text" placeholder="Enter Employee Name">
-                </div>
-                <div class="update-emp-inputs">
-                    <label>Status</label>
-                   
-                    <select name="status" id="status">
-                        <option value="active">Active</option>
-                        <option value="inactive">Inactive</option>
-                        <!-- Add more options as needed -->
-                    </select>
-                </div>
-                <div class="update-emp-inputs">
-                    <label>Role</label>
-                    <input type="text" placeholder="Enter Role">
-                </div>
-                <div class="update-emp-inputs">
-                    <label>NFC Code</label>
-                    <input type="text" placeholder="Enter NFC Code">
-                    <button class="scan_image" >
-                        <img style="width:30px;" src="./assets/images/scan.png" alt="scan">
-                    </button>
-                </div>
-                <div class="save-cancel-btn">
-                    <button>Save</button>
-                    <button>Cancel</button>
-                </div>
-              
-            </form>
-        </div> 
-        
-
-        <!-- <script>
-            function showBlur() {
-                let blurElement = document.querySelector('.blur');
-                let showContainer = document.querySelector('.update-emp-form')
-                blurElement.style.display = 'flex';
-                showContainer.style.display = 'block';
-            }
-        </script> -->
     </div>
 <script src="script.js"></script>
-</body>       
-  
+</body>
 </html>
