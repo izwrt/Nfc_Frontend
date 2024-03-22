@@ -449,10 +449,9 @@ h1{
 
 .update-emp-form{
     background-color: rgba(248, 239, 239, 0.233); 
-    border-radius: 10px;
-    width: 30rem;
-    padding:30px;
-    display:block;
+    padding: 60px;
+    padding-left: 90px;
+ border-radius: 10px;
 }
 
 .update-emp-inputs{
@@ -471,7 +470,7 @@ h1{
     
 }
 
-.update-emp-inputs input{
+.update-emp-inputs input, #status{
     background-color: transparent !important;
     border: 1px solid var(--smokywhite);
     width: 15rem;
@@ -482,7 +481,7 @@ h1{
     padding: 5px;
 }
 
-.update-emp-inputs input:focus{
+.update-emp-inputs input:focus, #status:focus{
     outline:none;
 }
 
@@ -496,6 +495,7 @@ h1{
     height: auto;
     background-color: transparent !important;
     display: flex !important;
+    padding-top: 30px;
     padding-left: 50px !important;
     padding-right: 50px !important;
     justify-content: space-evenly !important;
@@ -525,8 +525,7 @@ h1{
 
 #status{
     display:flex;
-    width:19vw;
-    height:35px;
+    width: 56.5%;
     background: transparent; 
     color :rgba(255, 255, 255, 0.486);
     border: 1px solid var(--smokywhite);
@@ -535,8 +534,10 @@ h1{
 }
 
 .scan_image{
+    display:flex;
+    justify-content: center;
+    align-items: center;
     border: none;
-    padding-top: 10px;
     background-color:transparent;
    
 }
