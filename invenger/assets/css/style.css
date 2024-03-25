@@ -437,6 +437,11 @@ h1{
         width:15px;
       }
 
+      #table-spac{
+       padding-left: 3rem;
+      }
+
+
 /* --------------------------------Update Emp--------------------------------------------  */
 
 .update-emp-body{
