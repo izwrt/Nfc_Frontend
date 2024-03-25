@@ -452,6 +452,8 @@ h1{
     padding: 60px;
     padding-left: 90px;
  border-radius: 10px;
+ 
+ 
 }
 
 .update-emp-inputs{
@@ -459,7 +461,8 @@ h1{
     display: flex !important;
     justify-content: left !important;
     flex:1 !important;
-    padding-bottom: 20px !important;
+    padding-bottom: 20px !important;    
+    
 }
 
 .update-emp-inputs label{
@@ -483,6 +486,7 @@ h1{
 
 .update-emp-inputs input:focus, #status:focus{
     outline:none;
+   
 }
 
 .update-emp-inputs input::placeholder{
@@ -525,7 +529,7 @@ h1{
 
 #status{
     display:flex;
-    width: 56.5%;
+    width: 61.5%;
     background: transparent; 
     color :rgba(255, 255, 255, 0.486);
     border: 1px solid var(--smokywhite);
@@ -544,6 +548,7 @@ h1{
 .save-cancel-btn{
     height: auto;
     background-color: transparent !important;
+    gap:5rem !important;
     display: flex !important;
     padding-left: 50px !important;
     padding-right: 120px !important;
